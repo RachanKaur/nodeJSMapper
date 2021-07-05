@@ -14,7 +14,7 @@ Click on Create database option from Astra UI.
 
 
 Add the details.
-Database name
+Database name,
 Keyspace name: this is important, remember this and keep it simple as it will be used in the application.
 Choose the desired cloud environment plan from Google cloud, AWS and Microsoft Azure. 
 And click on create database.
@@ -32,11 +32,7 @@ Click on the database name. It will move to the database overview. There are var
 Connecting the database through node.js application
 Create a simple node.js project. I have created a NodeJS express project.
 
-Research Documents for more information.
-blog node.js mapper with apache cassandra
-GitHub link
-
-I am using the already created Astra db AstraChatApp with keyspace name astrachatapp.
+I had created Astra db AstraChatApp with keyspace name astrachatapp.
 
 In the Astra UI dashboard click on the database name and move from overview to connect tab by clicking on the Connect. There are various ways available to connect to the Astra DB.
 
@@ -105,8 +101,7 @@ Then we need to use the database keyspace and perform some queries.
 Some of you can get this error while referring to the previous documentation.
 error: missing correct permissions.
 
-The previous documentation is based on cassandra node.js driver. As cassandra can be on premises DB in which you have full access to DB and can do anything, but when it comes to cloud there are some restrictions which is known as opinionated control. In this way some access is denied which gives a missing correct permissions error.
-
+Some documentation available is based on cassandra node.js driver. As cassandra can be on premises DB in which you have full access to DB and can do anything, but when it comes to cloud there are some restrictions which is known as opinionated control. In this way some access is denied which gives a missing correct permissions error.
 
 Solution:
 Create the keyspace by using Astra UI.
